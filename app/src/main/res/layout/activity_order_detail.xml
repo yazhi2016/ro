@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.xmzlb.iron.activity.OrderDetailActivity">
+
+    <include
+        layout="@layout/topbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <include
+            android:id="@+id/goods"
+            layout="@layout/include_roborderdetail"></include>
+        <include
+            android:id="@+id/weight"
+            layout="@layout/include_roborderdetail"></include>
+        <include
+            android:id="@+id/begin"
+            layout="@layout/include_roborderdetail"></include>
+        <include
+            android:id="@+id/end"
+            layout="@layout/include_roborderdetail"></include>
+        <include
+            android:id="@+id/seller"
+            layout="@layout/include_roborderdetail"></include>
+        <include
+            android:id="@+id/phone"
+            layout="@layout/include_roborderdetail"></include>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_rob"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:text="抢单"
+            android:textSize="18sp"
+            android:background="@drawable/btn_orderdetail_btn"
+            android:textColor="@color/btn_orderdetail_rob"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

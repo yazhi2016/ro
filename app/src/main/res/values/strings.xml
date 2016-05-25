@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Iron</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <drawable name="red">#DA271A</drawable>
+    <drawable name="gray">#656565</drawable>
+    <drawable name="gray6e">#eeeeee</drawable>
+    <drawable name="btn_gray">#D7D7D7</drawable>
+    <drawable name="light_btn_gray">#eeeeee</drawable>
+    <drawable name="green">#00B700</drawable>
+    <drawable name="light_green">#22d833</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="light_gray">#dddddd</drawable>
+    <drawable name="main_pop_choosedate">#66000000</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="topbar_normal">#393A3F</drawable>
+    <drawable name="topbar_pressed">#666666</drawable>
+</resources>

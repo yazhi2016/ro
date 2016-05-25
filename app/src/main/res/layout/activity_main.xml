@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.xmzlb.iron.weight.MyViewPager
+        android:id="@+id/myPager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"></com.xmzlb.iron.weight.MyViewPager>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/maingray"
+        android:layout_height="1dp"/>
+
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottombar"
+        tl:tl_iconHeight="25dp"
+        tl:tl_iconWidth="25dp"
+        tl:tl_textsize="14sp"
+        tl:tl_textSelectColor="@color/green"
+        tl:tl_textUnselectColor="@color/maingray"
+        ></com.flyco.tablayout.CommonTabLayout>
+</LinearLayout>

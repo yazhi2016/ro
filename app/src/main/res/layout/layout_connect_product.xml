@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="36%w"
+            app:layout_widthPercent="36%w"
+            fresco:placeholderImage="@drawable/delete1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            app:layout_heightPercent="36%w"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:layout_weight="3"
+                android:text="钢铁一号店"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:text="品名:高线"
+                    android:textSize="@dimen/ts1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:layout_weight="1"
+                    android:text="材质:Q195"
+                    android:textSize="@dimen/ts1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical|left"
+                android:layout_weight="2"
+                android:text="规格:1.2*1250*C"
+                android:textSize="@dimen/ts1"/>
+
+            <TextView
+                android:id="@+id/oldPrice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical|left"
+                android:layout_weight="2"
+                android:text="原价:3500/吨"
+                android:textSize="@dimen/ts1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical|left"
+                android:layout_weight="2"
+                android:text="现价:3500/吨"
+                android:textColor="@color/red"
+                android:textSize="@dimen/ts1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/delete2"
+                    android:gravity="left|center_vertical"
+                    android:text="积分抵用3%"
+                    android:textSize="@dimen/ts1"
+                    android:textColor="@color/red"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/time"
+                    android:gravity="left|center_vertical"
+                    android:text="限时抢购"
+                    android:textSize="@dimen/ts1"
+                    android:textColor="@color/red"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</LinearLayout>

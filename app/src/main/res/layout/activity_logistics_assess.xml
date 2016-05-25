@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray6e"
+    android:orientation="vertical"
+    tools:context="com.xmzlb.iron.activity.LogisticsAssessActivity">
+
+    <include
+        layout="@layout/topbar"></include>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="签收人："
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/logAsseAct"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="爱上的"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="联系电话：15659889999"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/logAsseAct"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货物"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/logAsseAct"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="商品：高线"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="材质：HRB400"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="重量：8吨"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="钢厂：宝钢"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="起点:厦门"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="终点:上海"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="运输价格:320元"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货车司机"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/logAsseAct"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="司机：扬州慢"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="联系电话：12333334444"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="发货时间：2014-12-12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="到货时间：2012-12-12"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/logAsseAct"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="给个评价吧！"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="速度"
+                        android:textColor="@color/black"
+                        android:paddingTop="3dp"
+                        android:textSize="16sp"/>
+
+                    <com.hedgehog.ratingbar.RatingBar
+                        xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/speed_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_time"
+                        hedgehog:clickable="true"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@drawable/starno"
+                        hedgehog:starFill="@drawable/staryes"
+                        hedgehog:starImageSize="24dp"></com.hedgehog.ratingbar.RatingBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="一般"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="3dp"
+                        android:text="服务"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <com.hedgehog.ratingbar.RatingBar
+                        xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/serve_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_time"
+                        hedgehog:clickable="true"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@drawable/starno"
+                        hedgehog:starFill="@drawable/staryes"
+                        hedgehog:starImageSize="24dp"></com.hedgehog.ratingbar.RatingBar>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="一般"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="150dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="请输入您对货车司机的评价"
+                        android:padding="10dp"
+                        android:gravity="left|top"
+                        android:background="@drawable/corner_solidwhite_strokegray"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30dp">
+
+                    <Button
+                        android:id="@+id/btn_assess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btn_orderdetail_btn"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:text="提交评价"
+                        android:textColor="@color/btn_orderdetail_rob"
+                        android:textSize="18sp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

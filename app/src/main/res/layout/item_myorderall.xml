@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_height="50dp">
+
+      <TextView
+          android:id="@+id/allFraItemName"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:gravity="center"
+          android:text="高线钢板"
+          android:layout_marginLeft="10dp"
+          android:textSize="17sp"
+          android:textColor="@color/black"
+          />
+
+      <TextView
+          android:layout_width="0dp"
+          android:textSize="16sp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:layout_marginLeft="5dp"
+          android:text="8吨"
+          />
+
+      <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="5"
+          android:paddingLeft="5dp"
+          >
+
+          <ImageView
+              android:id="@+id/img_double"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_centerInParent="true"
+              android:src="@drawable/doubleicon"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:paddingRight="5dp"
+              android:textSize="16sp"
+              android:layout_toLeftOf="@+id/img_double"
+              android:gravity="center"
+              android:text="厦门"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:paddingLeft="5dp"
+              android:textSize="16sp"
+              android:layout_toRightOf="@+id/img_double"
+              android:gravity="center"
+              android:text="上海"
+              />
+
+      </RelativeLayout>
+
+      <TextView
+          android:id="@+id/allFraItemPrice"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:gravity="center"
+          android:textSize="17sp"
+          android:layout_marginRight="5dp"
+          android:text="未成功"
+          />
+
+  </LinearLayout>
+
+</RelativeLayout>

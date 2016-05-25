@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="topbar">#393A3F</color>
+    <color name="topbar_pressed">#666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#dddddd</color>
+    <color name="white">#ffffff</color>
+    <color name="product_top">#2A2A2A</color>
+    <color name="red">#DA271A</color>
+    <color name="black">#000000</color>
+    <color name="gray">#656565</color>
+    <color name="green">#00B700</color>
+    <color name="maingray">#B5B5B5</color>
+    <color name="pricefra_gray">#eeeeee</color>
+    <color name="location_gray">#EEEEEE</color>
+    <color name="gray6e">#EEEEEE</color>
+    <color name="text">#737373</color>
+
+</resources>

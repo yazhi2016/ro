@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="30%w"
+                app:layout_widthPercent="30%w"
+                fresco:placeholderImage="@drawable/delete1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_heightPercent="30%w"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:text="平板车"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="长:8米"
+                        android:textSize="@dimen/ts4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="高:3米"
+                        android:textSize="@dimen/ts4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="载重:8吨"
+                        android:textSize="@dimen/ts4"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="运送区域:上海、厦门"
+                    android:textSize="@dimen/ts4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="车牌号:闽D12345"
+                    android:textSize="@dimen/ts4"/>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/text_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:text="15次拉货"
+                        android:textSize="@dimen/ts4"
+                        />
+
+                    <com.hedgehog.ratingbar.RatingBar
+                        xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/carFraRatingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/text_time"
+                        hedgehog:clickable="false"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@drawable/white"
+                        hedgehog:starFill="@drawable/star"
+                        hedgehog:starImageSize="18dp"
+                        >
+
+                    </com.hedgehog.ratingbar.RatingBar>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="30%w"
+                >
+
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/call"
+                    />
+
+            </RelativeLayout>
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </LinearLayout>
+</RelativeLayout>
