@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xmzlb.iron.activity.CarIdentificationActivity">
+
+    <include
+        layout="@layout/topbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/gray6e"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray6e"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="身份认证上传"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/watchout"
+                    />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/carIdeItem1"
+                layout="@layout/include_itembar"></include>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/peopleRec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/gray6e"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="货车认证上传"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/watchout"
+                    />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/carIdeItem2"
+                layout="@layout/include_itembar"></include>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/carRec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/gray6e"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="货车认证上传"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/watchout"
+                    />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/carIdeItem3"
+                layout="@layout/include_itembar"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="货车车主"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写真实姓名"
+                    android:paddingRight="@dimen/caridentitypaddingLeft"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6e"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="车主电话"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写联系方式"
+                    android:paddingRight="@dimen/caridentitypaddingLeft"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6e"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="货车车牌"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写货车车牌号"
+                    android:paddingRight="@dimen/caridentitypaddingLeft"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6e"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="车身长高"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写车身长高"
+                    android:paddingRight="@dimen/caridentitypaddingLeft"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6e"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="载重量"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写货车载重量"
+                    android:paddingRight="@dimen/caridentitypaddingLeft"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6e"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/caridentitypaddingLeft"
+                    android:text="运送区域"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="用“，”区分,(最多五个区域)"
+                    android:paddingRight="@dimen/caridentitypaddingLeft"
+                    android:textSize="@dimen/caridentitytextsize"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6e"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="40dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <Button
+                        android:id="@+id/item_btnchoose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_looklogistics"
+                        android:text="提交"
+                        android:textColor="@color/btn_looklogistics_text"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/item_btnhave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_looklogistics"
+                        android:text="暂不认证"
+                        android:textColor="@color/btn_looklogistics_text"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_btn"
+        layout="@layout/include_bottom_2btn"></include>
+
+</LinearLayout>

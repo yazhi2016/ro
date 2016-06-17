@@ -1,6 +1,7 @@
 package com.xmzlb.iron.fragment
 
 
+import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -11,7 +12,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupWindow
 import com.xmzlb.iron.R
+import com.xmzlb.iron.activity.CarIdentificationActivity
 import kotlinx.android.synthetic.main.fragment_logistics_blank.*
+import kotlinx.android.synthetic.main.pop_topbar_set.view.*
 import kotlinx.android.synthetic.main.topbar2.*
 
 /**
@@ -31,6 +34,9 @@ class LogisticsFragment : Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        topbar2_btn_approve.visibility = View.VISIBLE
+
         logFraViewpager.adapter = pagerAdapter(childFragmentManager)
         logFraViewpager.offscreenPageLimit = 3
         logFraTablayout.setViewPager(logFraViewpager, title)
@@ -40,6 +46,9 @@ class LogisticsFragment : Fragment() {
         }
 
         popview = LayoutInflater.from(activity).inflate(R.layout.pop_topbar_set, null)
+        popview?.identify?.setOnClickListener {
+            startActivity(Intent(activity, CarIdentificationActivity::class.java))
+        }
         pop = PopupWindow(popview, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT, true)
         val b = BitmapDrawable()
         pop?.setBackgroundDrawable(b)

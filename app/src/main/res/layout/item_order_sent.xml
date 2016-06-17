@@ -1,230 +1,555 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:fresco="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:background="@color/white"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="#F4F4F4"
-        android:layout_marginTop="3dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="10dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:background="@color/green"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:text="幸福一家"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/text_state"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:gravity="center_vertical|right"
-            android:text="已发货"
-            android:textColor="@color/red"/>
-    </LinearLayout>
-
-    <com.zhy.android.percent.support.PercentLinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <com.facebook.drawee.view.SimpleDraweeView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_heightPercent="36%w"
-            app:layout_widthPercent="36%w"
-            fresco:placeholderImage="@drawable/delete1"/>
+        android:orientation="vertical"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginLeft="15dp"
-            android:orientation="vertical"
-            app:layout_heightPercent="36%w"
-            >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="3"
-                android:gravity="left|center_vertical"
-                android:text="钢铁一号店"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical|left"
-                    android:text="品名:高线"
-                    android:textSize="@dimen/ts1"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical|left"
-                    android:text="材质:Q195"
-                    android:textSize="@dimen/ts1"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:gravity="center_vertical|left"
-                android:text="规格:1.2*1250*C"
-                android:textSize="@dimen/ts1"/>
-
-            <TextView
-                android:id="@+id/oldPrice"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:gravity="center_vertical|left"
-                android:text="原价:3500/吨"
-                android:textSize="@dimen/ts1"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:gravity="center_vertical|left"
-                android:text="现价:3500/吨"
-                android:textColor="@color/red"
-                android:textSize="@dimen/ts1"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:drawableLeft="@drawable/delete2"
-                    android:gravity="left|center_vertical"
-                    android:text="积分抵用3%"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/ts1"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:drawableLeft="@drawable/time"
-                    android:gravity="left|center_vertical"
-                    android:text="限时抢购"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/ts1"
-                    />
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </com.zhy.android.percent.support.PercentLinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/light_gray"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:padding="8dp"
-        android:layout_height="50dp">
-
-        <Button
-            android:id="@+id/item_btnOrderSent"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textColor="@color/btn_looklogistics_text"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="5dp"
-            android:textSize="16sp"
-            android:background="@drawable/btn_looklogistics"
-            android:text="查看物流"
-            />
-
-        <LinearLayout
-            android:id="@+id/linear_newbtn"
-            android:visibility="gone"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:id="@+id/item_btnchoose"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textColor="@color/btn_looklogistics_text"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="5dp"
-                android:textSize="16sp"
-                android:background="@drawable/btn_looklogistics"
-                android:text="选择抢单货车"
-                />
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:background="#F4F4F4"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="10dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/green"
+                />
 
-            <Button
-                android:id="@+id/item_btnhave"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
                 android:layout_weight="1"
-                android:textColor="@color/btn_looklogistics_text"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="5dp"
-                android:textSize="16sp"
-                android:background="@drawable/btn_looklogistics"
-                android:text="已有货车"
-                />
+                android:gravity="center_vertical"
+                android:text="幸福一家"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/text_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|right"
+                android:text="已发货"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="36%w"
+                app:layout_widthPercent="36%w"
+                fresco:placeholderImage="@drawable/delete1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                app:layout_heightPercent="36%w"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:text="钢铁一号店"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="品名:高线"
+                        android:textSize="@dimen/ts1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="材质:Q195"
+                        android:textSize="@dimen/ts1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="规格:1.2*1250*C"
+                    android:textSize="@dimen/ts1"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/oldPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|left"
+                        android:text="原价:3500/吨"
+                        android:textSize="@dimen/ts1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="2"
+                        android:background="@color/gray69"
+                        android:gravity="center_vertical|left"
+                        android:text="原价:3500/吨"
+                        android:textSize="@dimen/ts1"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|left"
+                    android:text="现价:3500/吨"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/ts1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/delete2"
+                        android:gravity="left|center_vertical"
+                        android:text="积分抵用3%"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ts1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@drawable/time"
+                        android:gravity="left|center_vertical"
+                        android:text="限时抢购"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ts1"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="满10吨减100元"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts1"
+                    />
+
+                <TextView
+                    android:id="@+id/item1_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-100元"
+                    android:textSize="@dimen/ts1"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="满10吨减100元"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts1"
+                    />
+
+                <TextView
+                    android:id="@+id/item2_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-100元"
+                    android:textSize="@dimen/ts1"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="共优惠"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts1"
+                    />
+
+                <TextView
+                    android:id="@+id/item3_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="-100元"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/ts1"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/all_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/all_cut_money"
+                    android:text="共1件商品"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts1"
+                    />
+
+                <TextView
+                    android:id="@+id/all_cut_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="合计：100元"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/ts1"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:layout_toLeftOf="@+id/need_pay_money"
+                    android:text="优惠后实付："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ts1"
+                    />
+
+                <TextView
+                    android:id="@+id/need_pay_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="100元(不含运费)"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/ts1"
+                    />
+            </RelativeLayout>
 
 
         </LinearLayout>
 
-    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"/>
 
-    <TextView
-        android:id="@+id/line_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:visibility="gone"
-        android:background="@color/light_gray"/>
+        <!--0 2 卖家、待发货-->
+        <RelativeLayout
+            android:id="@+id/rela_btn_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone">
 
+            <Button
+                android:id="@+id/item_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_looklogistics"
+                android:text="发货"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
 
-</LinearLayout>
+        </RelativeLayout>
+
+        <!--1 2 买家、待发货-->
+        <RelativeLayout
+            android:id="@+id/rela_btn_refund_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/item_btn_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_looklogistics"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="提醒卖家发货"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/item_btn_refund"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/item_btn_send_message"
+                android:background="@drawable/btn_looklogistics"
+                android:text="申请退款"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+        <!--1 4 买家、待评价-->
+        <RelativeLayout
+            android:id="@+id/rela_btn_refund_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/item_btn_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_looklogistics"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="评价"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/item_btn_delete_order"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/item_btn_evaluate"
+                android:background="@drawable/btn_looklogistics"
+                android:text="删除订单"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+
+        <!--1 1 买家、待付款-->
+        <RelativeLayout
+            android:id="@+id/rela_btn_refund_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/item_btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_looklogistics"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="付款"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/item_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/item_btn_pay"
+                android:background="@drawable/btn_looklogistics"
+                android:text="取消订单"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/item_btn_call_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/item_btn_cancel"
+                android:background="@drawable/btn_looklogistics"
+                android:text="联系卖家"
+                android:textColor="@color/btn_looklogistics_text"
+                android:textSize="15sp"
+                />
+
+        </RelativeLayout>
+
+        <!--0 2 卖家、待发货 卖家点击发货后：-->
+
+        <RadioGroup
+            android:id="@+id/rela_radiogroup_02_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone"
+            >
+
+            <RadioButton
+                android:id="@+id/radiobtn1"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_corsolwhitestrgray_cornersolgreen_check"
+                android:button="@null"
+                android:gravity="center"
+                android:text="选择抢单货车"
+                android:textColor="@color/selector_gray_white_checked"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_corsolwhitestrgray_cornersolgreen_check"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已有货车"
+                android:textColor="@color/selector_gray_white_checked"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radiobtn3"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_corsolwhitestrgray_cornersolgreen_check"
+                android:button="@null"
+                android:gravity="center"
+                android:text="取消发货"
+                android:textColor="@color/selector_gray_white_checked"
+                android:textSize="15sp"
+                />
+
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</RelativeLayout>

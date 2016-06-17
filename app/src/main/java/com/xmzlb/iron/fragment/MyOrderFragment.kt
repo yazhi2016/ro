@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_myorder.*
 
 open class MyOrderFragment : Fragment() {
 
-    val title = arrayOf("我的抢单", "已成功", "未成功", "已完成")
+    val title = arrayOf("所有运单", "抢单成功", "抢单失败", "完成抢单")
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

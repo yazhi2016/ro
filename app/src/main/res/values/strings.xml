@@ -5,6 +5,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <drawable name="red">#DA271A</drawable>
+    <drawable name="statusbar">#F5F4F2</drawable>
     <drawable name="gray">#656565</drawable>
     <drawable name="gray6e">#eeeeee</drawable>
     <drawable name="btn_gray">#D7D7D7</drawable>

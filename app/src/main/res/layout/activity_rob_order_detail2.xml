@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray6e"
+    android:orientation="vertical"
+    tools:context="com.xmzlb.iron.activity.RobOrderDetailActivity2">
+
+    <include
+        layout="@layout/topbar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray6e"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_launcher"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img"
+                android:text="抢单状态"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+
+        <com.xmzlb.iron.weight.StatusBar
+            android:id="@+id/statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </com.xmzlb.iron.weight.StatusBar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <include
+            layout="@layout/include_itembar_title"></include>
+
+        <include
+            android:id="@+id/goods"
+            layout="@layout/include_roborderdetail2"></include>
+
+        <include
+            android:id="@+id/weight"
+            layout="@layout/include_roborderdetail2"></include>
+
+        <include
+            android:id="@+id/begin"
+            layout="@layout/include_roborderdetail2"></include>
+
+        <include
+            android:id="@+id/end"
+            layout="@layout/include_roborderdetail2"></include>
+
+        <include
+            android:id="@+id/phone"
+            layout="@layout/include_roborderdetail2"></include>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="我的出价"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/text_myprice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="right|center_vertical"
+                android:text="320元"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray6e"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

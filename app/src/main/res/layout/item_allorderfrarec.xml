@@ -15,7 +15,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="高线钢板"
             android:textColor="@color/black"
@@ -35,14 +35,14 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="2"
             android:paddingLeft="5dp"
             >
 
             <ImageView
                 android:id="@+id/img_double"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_centerInParent="true"
                 android:src="@drawable/doubleicon"
                 />
@@ -72,15 +72,16 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:padding="10dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
             >
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
                 android:background="@drawable/btn_getorder"
+                android:layout_centerVertical="true"
                 android:text="抢单"
                 android:textColor="@color/btn_getorder_text"
                 />

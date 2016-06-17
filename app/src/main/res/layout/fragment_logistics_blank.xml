@@ -15,12 +15,12 @@
         android:id="@+id/logFraTablayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tablayoutHeight"
-        app:tl_indicator_color="@color/red"
+        app:tl_indicator_color="@color/green"
         app:tl_indicator_height="@dimen/tablayoutIndicatorHeight"
         app:tl_tab_space_equal="true"
-        app:tl_textSelectColor="@color/black"
+        app:tl_textSelectColor="@color/green"
         app:tl_textUnselectColor="#999999"
-        app:tl_textsize="18sp"
+        app:tl_textsize="@dimen/tablayoutTextsize"
         >
 
     </com.flyco.tablayout.SlidingTabLayout>

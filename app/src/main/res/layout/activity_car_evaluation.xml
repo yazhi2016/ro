@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray6e"
+    android:orientation="vertical"
+    tools:context="com.xmzlb.iron.activity.CarEvaluationActivity">
+
+    <include
+        layout="@layout/topbar"></include>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="25%w"
+            app:layout_widthPercent="25%w"
+            fresco:placeholderImage="@drawable/delete1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_heightPercent="25%w"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="罗秘书"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="闽D12314"
+                android:textSize="@dimen/ts4"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center_vertical"
+                    android:text="15次拉货"
+                    android:textSize="@dimen/ts4"
+                    />
+
+                <com.hedgehog.ratingbar.RatingBar
+                    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_time"
+                    hedgehog:clickable="false"
+                    hedgehog:starCount="5"
+                    hedgehog:starEmpty="@drawable/starno"
+                    hedgehog:starFill="@drawable/staryes"
+                    hedgehog:starImageSize="20dp"
+                    >
+
+                </com.hedgehog.ratingbar.RatingBar>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="联系电话：12344445555"
+                android:textSize="@dimen/ts4"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            app:layout_heightPercent="25%w"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/call"
+                />
+
+        </RelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text"
+                android:background="@color/gray6e"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/text"
+                android:background="@color/gray6e"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:text="匿名评价司机"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hedgehog.ratingbar.RatingBar
+                xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/star_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                hedgehog:clickable="true"
+                hedgehog:starCount="5"
+                hedgehog:starEmpty="@drawable/starno"
+                hedgehog:starFill="@drawable/staryes"
+                hedgehog:starImageSize="50dp"
+                >
+            </com.hedgehog.ratingbar.RatingBar>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="非常满意，无可挑剔"
+            android:textColor="@color/green"
+            android:textSize="17sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_solidwhite_strokegray"
+            android:gravity="center_horizontal|top"
+            android:hint="其他意见和建议（内容匿名，可放心填写）"
+            android:padding="10dp"
+            android:textSize="15sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_assess"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_cornersolidgreen_cornersolidgray"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="提交评价"
+                android:textColor="@color/selector_white_green"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

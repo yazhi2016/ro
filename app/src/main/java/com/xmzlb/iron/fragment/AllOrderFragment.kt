@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.xmzlb.iron.R
 import com.xmzlb.iron.base.BaseRecyclerAdapte
-import com.xmzlb.iron.utils.GlobalParames
+import com.xmzlb.iron.utils.MyGlobal
 import kotlinx.android.synthetic.main.fragment_allorder.*
 
 /**
@@ -29,7 +29,7 @@ open class AllOrderFragment : Fragment() {
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         allOrdFraRec.layoutManager = LinearLayoutManager(activity)
-        allOrdFraRec.adapter = MyAdapter().setData(GlobalParames.getList())
+        allOrdFraRec.adapter = MyAdapter().setData(MyGlobal.getList())
     }
 
     inner class MyAdapter : BaseRecyclerAdapte<String>() {

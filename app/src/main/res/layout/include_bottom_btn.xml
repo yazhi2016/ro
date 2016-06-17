@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/bottom_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_cornersolidgreen_cornersolidgray"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text=""
+            android:textColor="@color/selector_white_green"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -357,6 +357,7 @@ public class LocationActivity extends BaseActivity {
                     t2.setText(citiesList.get(position).getName());
                 }
             }
+
             return view;
         }
     }

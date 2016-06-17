@@ -13,5 +13,4 @@ public class BaseApplication extends Application {
         Fresco.initialize(this);
 
     }
-
 }

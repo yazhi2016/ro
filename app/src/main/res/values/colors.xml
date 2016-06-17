@@ -8,15 +8,21 @@
     <color name="transparent">#00000000</color>
     <color name="light_gray">#dddddd</color>
     <color name="white">#ffffff</color>
+    <color name="statusbar">#F5F4F2</color>
+    <color name="white_press">#7fffffff</color>
     <color name="product_top">#2A2A2A</color>
     <color name="red">#DA271A</color>
     <color name="black">#000000</color>
     <color name="gray">#656565</color>
     <color name="green">#00B700</color>
+    <color name="green_press">#7f00B700</color>
     <color name="maingray">#B5B5B5</color>
     <color name="pricefra_gray">#eeeeee</color>
     <color name="location_gray">#EEEEEE</color>
     <color name="gray6e">#EEEEEE</color>
+    <color name="gray69">#999999</color>
     <color name="text">#737373</color>
+    <color name="meblack">#393A3F</color>
+    <color name="light_white">#F0EFF4</color>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.xmzlb.iron.fragment
 
 
+import android.content.DialogInterface
 import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
@@ -16,8 +17,10 @@ import com.wx.wheelview.adapter.ArrayWheelAdapter
 import com.wx.wheelview.adapter.BaseWheelAdapter
 import com.wx.wheelview.widget.WheelView
 import com.xmzlb.iron.R
+import com.xmzlb.iron.weight.MyDialog
 import kotlinx.android.synthetic.main.fragment_price.*
 import kotlinx.android.synthetic.main.pop_choosedate.view.*
+import kotlinx.android.synthetic.main.topbar.*
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -30,7 +33,7 @@ class PriceFragment : Fragment(), View.OnClickListener {
     lateinit internal var inflater: LayoutInflater
     lateinit private var mChoosedcate: PopupWindow
     private var format: SimpleDateFormat? = null
-    lateinit internal var pop_choosedcate:View
+    lateinit internal var pop_choosedcate: View
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -71,6 +74,13 @@ class PriceFragment : Fragment(), View.OnClickListener {
         val b = BitmapDrawable()
         mChoosedcate.setBackgroundDrawable(b)
         mChoosedcate.setOnDismissListener { }
+
+        topbar_btn_share.setOnClickListener {
+            var builder = MyDialog.Companion.Builder(activity, null, "test message1", "yes1", "no1")
+            builder.yesClickListener = DialogInterface.OnClickListener { dialogInterface, i -> }
+            builder.noClickListener = DialogInterface.OnClickListener { dialogInterface, i -> }
+            builder.create().show()
+        }
     }
 
     internal var list = ArrayList<Fragment>()

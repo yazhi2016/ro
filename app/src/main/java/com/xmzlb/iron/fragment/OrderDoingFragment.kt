@@ -23,7 +23,7 @@ open class OrderDoingFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater!!.inflate(R.layout.fragment_meorder , container, false)
+        return inflater!!.inflate(R.layout.fragment_meorder, container, false)
     }
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
@@ -38,8 +38,8 @@ open class OrderDoingFragment : Fragment() {
             var fragment: Fragment? = null
             when (position) {
                 0 -> fragment = MeOrderDoingFragment()
-                1 -> fragment = OrderSentFragment(0) //待发货
-                2 -> fragment = OrderSentFragment(1) //已发货
+                1 -> fragment = OrderSentFragment(1, 0) //待发货
+                2 -> fragment = OrderSentFragment(1, 1) //已发货
                 3 -> fragment = MeOrderDoingFragment()
             }
             return fragment!!

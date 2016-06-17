@@ -7,8 +7,17 @@
     <dimen name="ts3">15sp</dimen>
     <dimen name="ts4">15sp</dimen>
     <dimen name="main_bottombar">60dp</dimen>
-    <dimen name="tablayoutIndicatorHeight">2dp</dimen>
-    <dimen name="tablayoutHeight">50dp</dimen>
+    <dimen name="tablayoutIndicatorHeight">3dp</dimen>
+    <dimen name="tablayoutTextsize">17sp</dimen>
+    <dimen name="tablayoutHeight">40dp</dimen>
     <dimen name="tablayoutSecondHeight">30dp</dimen>
     <dimen name="logAsseAct">15sp</dimen>
+    <dimen name="caridentitypaddingLeft">18sp</dimen>
+    <dimen name="caridentitytextsize">16sp</dimen>
+    <dimen name="cardetailtextsize">15sp</dimen>
+    <dimen name="statusbartextsize">15sp</dimen>
+    <dimen name="text_me1">15sp</dimen>
+    <dimen name="text_me2">17sp</dimen>
+    <dimen name="me_paddingtop">10dp</dimen>
+    <dimen name="me_paddingbottom">10dp</dimen>
 </resources>

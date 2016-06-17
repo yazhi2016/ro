@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import com.xmzlb.iron.R
 
@@ -22,7 +23,7 @@ class MyDialog(context: Context, theme: Int) : Dialog(context, theme) {
     companion object {
 
         //type: 0 正常的title（默认），message；1，输入价格；2，输入物流
-        public class Builder(val context: Context, var title: String?, var message: String ?, var yesText: String ?, var noText: String ?, val type:Int = 0) {
+        public class Builder(val context: Context, var title: String?, var message: String ?, var yesText: String ?, var noText: String ?, val type: Int = 0) {
             var contentview: View ? = null
             var yesClickListener: DialogInterface.OnClickListener ? = null
             var noClickListener: DialogInterface.OnClickListener ? = null
@@ -44,8 +45,9 @@ class MyDialog(context: Context, theme: Int) : Dialog(context, theme) {
 
             fun create(): MyDialog {
                 val view = LayoutInflater.from(context).inflate(R.layout.layout_mydialog, null)
-                val dialog = MyDialog(context, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen)
-                dialog.addContentView(view, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT))
+//                val dialog = MyDialog(context, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen) //会覆盖状态栏
+                val dialog = MyDialog(context, android.R.style.Theme_Translucent_NoTitleBar)
+                dialog.addContentView(view, ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT))
                 var titleView = view.findViewById(R.id.title) as TextView
                 if (title == null) {
                     titleView.visibility = View.GONE
@@ -56,22 +58,26 @@ class MyDialog(context: Context, theme: Int) : Dialog(context, theme) {
                 var text_message = view.findViewById(R.id.message) as TextView
                 var linear_price = view.findViewById(R.id.linear_price) as LinearLayout
                 var linear_logistics = view.findViewById(R.id.linear_logistics) as LinearLayout
-                when(type) {
+                var rela_radiogroup = view.findViewById(R.id.rela_radiogroup) as RelativeLayout
+                when (type) {
                     0 -> { //默认模式
                         text_message.visibility = View.VISIBLE
                         linear_price.visibility = View.GONE
                         linear_logistics.visibility = View.GONE
+                        rela_radiogroup.visibility = View.GONE
                         text_message.text = message
                     }
                     1 -> { //价格模式
-                        text_message.visibility = View.GONE
+                        text_message.visibility = View.INVISIBLE
                         linear_price.visibility = View.VISIBLE
                         linear_logistics.visibility = View.GONE
+                        rela_radiogroup.visibility = View.GONE
                     }
                     2 -> { //填写物流信息模式
                         text_message.visibility = View.GONE
                         linear_price.visibility = View.GONE
                         linear_logistics.visibility = View.VISIBLE
+                        rela_radiogroup.visibility = View.VISIBLE
                     }
                 }
                 var btn_yes = view.findViewById(R.id.btn_yes) as Button

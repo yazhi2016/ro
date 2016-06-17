@@ -12,7 +12,7 @@
         android:background="#EEEEEE"
         app:tl_indicator_color="#EEEEEE"
         app:tl_tab_space_equal="true"
-        app:tl_textSelectColor="@color/red"
+        app:tl_textSelectColor="@color/green"
         app:tl_textUnselectColor="#999999"
         app:tl_textsize="16sp"
 

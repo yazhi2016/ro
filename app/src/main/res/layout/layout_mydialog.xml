@@ -3,7 +3,7 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#55000000"
+                android:background="#7f000000"
                 android:orientation="vertical">
 
 
@@ -13,17 +13,69 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            app:layout_widthPercent="75%w"
             android:background="@drawable/bg_dialog"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_widthPercent="75%w">
+
+            <RelativeLayout
+                android:id="@+id/rela_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/title0"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="选择状态"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radiobtn_doing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="13dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:text="运输中"
+                        android:textColor="@color/selector_gray_green_checked"
+                        android:textSize="17sp"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radiobtn_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:button="@null"
+                        android:text="已签收"
+                        android:textColor="@color/selector_gray_green_checked"
+                        android:textSize="17sp"
+                        />
+
+                </RadioGroup>
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@drawable/bg_dialog_toptext"
                 android:gravity="center"
                 android:text=""
                 android:textColor="@color/black"
@@ -33,25 +85,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 >
 
                 <TextView
                     android:id="@+id/message"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="100dp"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="17sp"
                     />
 
                 <LinearLayout
                     android:id="@+id/linear_price"
                     android:layout_width="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:visibility="gone"
-                    android:layout_height="wrap_content">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -59,35 +113,36 @@
                         android:gravity="center"
                         android:text="价格："
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="17sp"
                         />
 
                     <EditText
                         android:id="@+id/priceEidttext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="请输入价格"
-                        android:textSize="20sp"
                         android:background="@null"
+                        android:hint="请输入价格"
                         android:inputType="numberDecimal"
+                        android:textSize="17sp"
                         />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/linear_logistics"
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:visibility="gone"
-                    android:padding="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_height="wrap_content">
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="wrap_content">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -95,29 +150,29 @@
                             android:gravity="center"
                             android:text="抵达/离开时间："
                             android:textColor="@color/black"
-                            android:textSize="18sp"
+                            android:textSize="17sp"
                             />
 
                         <EditText
                             android:id="@+id/time_Eidttext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="2015-12-12"
-                            android:textSize="18sp"
                             android:background="@null"
+                            android:hint="2015-12-12"
+                            android:textSize="17sp"
                             />
 
                     </LinearLayout>
-                    
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="5dp"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:layout_height="wrap_content">
+                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -125,16 +180,16 @@
                             android:gravity="center"
                             android:text="抵达/离开地点："
                             android:textColor="@color/black"
-                            android:textSize="18sp"
+                            android:textSize="17sp"
                             />
 
                         <EditText
                             android:id="@+id/place_Eidttext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="离开厦门"
-                            android:textSize="18sp"
                             android:background="@null"
+                            android:hint="离开厦门"
+                            android:textSize="17sp"
                             />
 
                     </LinearLayout>
@@ -156,15 +211,15 @@
                     android:layout_height="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_dialog_leftbtn"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:text=""
                     />
 
                 <TextView
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="@color/black"
+                    android:background="@color/gray6e"
                     />
 
                 <Button
@@ -173,9 +228,9 @@
                     android:layout_height="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_dialog_rightbtn"
-                    android:textSize="18sp"
-                    android:textColor="@color/white"
                     android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
                     />
 
             </LinearLayout>

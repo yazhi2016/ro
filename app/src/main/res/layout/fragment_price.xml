@@ -26,8 +26,8 @@
 
             <ImageView
                 android:id="@+id/image1"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/leftarrow"
                 />
@@ -90,7 +90,6 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/selector_white_gray"
             android:clickable="true"
-            android:paddingLeft="15dp"
             android:paddingRight="10dp"
             app:layout_widthPercent="25%w">
 
@@ -105,8 +104,8 @@
 
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/rightarrow"

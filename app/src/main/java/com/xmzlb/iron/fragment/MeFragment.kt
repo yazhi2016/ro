@@ -25,11 +25,11 @@ open class MeFragment : Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btn_myorder.setOnClickListener {
+        rela_myorder.setOnClickListener {
             startActivity(Intent(activity, MyOrderActivity::class.java))
         }
         btn2.setOnClickListener {
-            startActivity(Intent(activity, RobOrderDetailActivity::class.java))
+            startActivity(Intent(activity, RobOrderDetailActivity2::class.java))
         }
         btn3.setOnClickListener {
             startActivity(Intent(activity, OrderDetailActivity::class.java))
@@ -39,6 +39,15 @@ open class MeFragment : Fragment() {
         }
         btn5.setOnClickListener {
             startActivity(Intent(activity, CarDetailActivity::class.java))
+        }
+        btn6.setOnClickListener {
+            startActivity(Intent(activity, CarIdentificationActivity::class.java))
+        }
+        btn7.setOnClickListener {
+            startActivity(Intent(activity, ProductInfoActivity::class.java))
+        }
+        btn8.setOnClickListener {
+            startActivity(Intent(activity, CarEvaluationActivity::class.java))
         }
     }
 

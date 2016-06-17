@@ -20,9 +20,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity"
-            android:windowSoftInputMode="adjustPan|stateHidden"
-            >
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -58,6 +58,21 @@
             android:windowSoftInputMode="adjustPan|stateHidden">
         </activity>
         <activity android:name=".activity.CarDetailActivity">
+        </activity>
+        <activity
+            android:name=".activity.CarIdentificationActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".activity.CarEvaluationActivity">
+        </activity>
+        <activity android:name=".activity.RobOrderDetailActivity2">
+        </activity>
+        <activity android:name=".activity.Main3Activity">
+        </activity>
+        <activity
+            android:name=".activity.OrderEvaluateActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            >
         </activity>
     </application>
 

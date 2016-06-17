@@ -11,6 +11,7 @@ import com.xmzlb.iron.fragment.ProductFragment
 import com.xmzlb.iron.fragment.RecommendLogisticsFragment
 import com.xmzlb.iron.fragment.RecommendShopFragment
 import kotlinx.android.synthetic.main.activity_product_info.*
+import kotlinx.android.synthetic.main.topbar.*
 
 /**
  * 商品动态、关联商品界面
@@ -22,6 +23,8 @@ class ProductInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_info)
+
+        topbar_btn_back.setOnClickListener { finish() }
 
         product_viewpager.adapter = pagerAdapter(supportFragmentManager)
         product_flycoLayout.setViewPager(product_viewpager, str)

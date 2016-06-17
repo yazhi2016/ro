@@ -28,9 +28,12 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/identify"
                     android:layout_width="0dp"
                     android:padding="6dp"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/selector_white_gray6e"
                     android:layout_height="wrap_content">
 
                     <com.facebook.drawee.view.SimpleDraweeView

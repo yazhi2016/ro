@@ -14,10 +14,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.xmzlb.iron.R
 import com.xmzlb.iron.base.BaseRecyclerAdapte
-import com.xmzlb.iron.utils.GlobalParames
+import com.xmzlb.iron.utils.MyGlobal
 import kotlinx.android.synthetic.main.fragment_carlist.*
 import kotlinx.android.synthetic.main.layout_recommend_logistics.view.*
 
+/**
+ * 首页-运输-货车列表
+ */
 open class CarListFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
@@ -29,7 +32,7 @@ open class CarListFragment : Fragment() {
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         carFraRec.layoutManager = LinearLayoutManager(activity)
-        carFraRec.adapter = RecAdapter().setData(GlobalParames.getList())
+        carFraRec.adapter = RecAdapter().setData(MyGlobal.getList())
 
     }
 

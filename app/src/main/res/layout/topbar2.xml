@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:orientation="horizontal"
+              android:layout_height="50dp"
               android:background="@color/topbar"
-              android:layout_height="50dp">
+              android:orientation="horizontal">
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
 
         <TextView
             android:id="@+id/topbar2_text_locaiton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="乌鲁木齐"
+            android:text="上海"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="17sp"
             />
 
         <ImageView
-            android:layout_toRightOf="@+id/topbar2_text_locaiton"
-            android:layout_width="20dp"
-            android:layout_marginLeft="3dp"
-            android:layout_height="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/topbar2_text_locaiton"
             android:src="@drawable/uparrow"
             />
 
@@ -33,18 +33,17 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
-        android:background="@drawable/corner_solidwhite"
-        android:layout_height="match_parent">
+        android:background="@drawable/corner_solidwhite">
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -56,21 +55,23 @@
 
                 <ImageView
                     android:id="@+id/image"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/search"
-                    android:padding="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/search"
                     />
+
                 <EditText
                     android:id="@+id/edt_location"
                     android:layout_width="wrap_content"
-                    android:layout_toRightOf="@+id/image"
                     android:layout_height="match_parent"
-                    android:hint="城市/拼音"
                     android:layout_centerVertical="true"
-                    android:gravity="center"
+                    android:layout_toRightOf="@+id/image"
                     android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="城市/拼音"
+                    android:textSize="14sp"
                     />
 
             </RelativeLayout>
@@ -80,21 +81,35 @@
 
     <ImageButton
         android:id="@+id/topbar2_btn_set"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/set"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:background="@drawable/topbar_back"
-        android:scaleType="fitXY"
         android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/set"
+        android:visibility="gone"
         />
+
     <ImageButton
         android:id="@+id/topbar2_btn_share"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/share"
-        android:scaleType="fitXY"
-        android:padding="10dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:background="@drawable/topbar_back"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/share"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/topbar2_btn_approve"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/topbar_back"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone"
         />
 
 </LinearLayout>
